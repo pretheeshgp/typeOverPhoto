@@ -1,0 +1,1826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TYPE OVER PHOTO|VIDEO SERIES</title>
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Alfa+Slab+One&family=Amatic+SC&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Roboto+Mono:wght@200&family=Roboto:wght@300&family=Space+Grotesk:wght@300&family=Special+Elite&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Overlock+SC&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+					<style type="text/css">
+
+
+								* {
+
+									box-sizing: border-box;
+								}
+
+
+								body {
+
+
+
+										margin: 0;
+										background-color: #000000;
+										font-family: 'Alfa Slab One', cursive;
+										background-image: url('./defaultBg.jpg');
+										background-size: contain;
+										background-repeat: no-repeat;
+
+
+
+								}
+
+								section.front {
+
+
+										width: 100%;
+										position: absolute;
+										margin: 0;
+										height: 100vh;
+/*
+										display: grid;
+										grid-template-areas: "a b" "a c" "a d" "a e";
+										grid-template-columns: 4fr 1fr;
+										grid-template-rows: repeat(4, 16vh);
+										grid-gap: 10%;
+*/
+
+								}
+
+
+								.settings {
+
+
+												display: flex;
+												flex-direction: row;
+												justify-content: center;
+												align-items: center;
+												width: 5%;
+												color: peachpuff;
+								}
+
+								.typeOverPhoto {
+
+
+											width: 99%;
+										    margin-left: 0.5%;
+										    height: 98vh;
+										    margin-top: 1vh;
+
+								/*			background-image: url("type-plant.jpg");   */
+											background-size: cover;
+											background-position: center;
+
+											display: grid;
+										    justify-content: center;
+										    align-items: center;
+										    font-size: 64px;
+										    color: #000000;
+										    font-weight: 600;
+										    font-family: 'Special Elite', cursive;
+										    text-align: center;
+
+										    cursor: text;
+
+
+								}
+
+								.typeOverPhoto:focus {
+
+												outline: none;
+
+
+								}
+
+								#tool1 {
+
+
+										grid-area: b;
+										cursor: pointer;
+
+								}
+
+								#tool2 {
+
+
+										grid-area: c;
+										cursor: pointer;
+								}
+
+								#tool3 {
+
+
+										grid-area: d;
+										cursor: pointer;
+																		}
+
+								#tool4 {
+
+										grid-area: e;
+										cursor: pointer;
+								}
+
+								.tools {
+
+
+									color: peachpuff;
+								}
+
+
+
+								svg {
+
+										cursor: pointer;
+								}
+
+
+								.typeable {
+
+												width: 1440px;
+											/*    height: 640px;   */
+											    background: #70809063;
+											    color: #35ff1a82;
+											    color: #ff1a4082;
+											    display: grid;
+											    justify-content: center;
+											    align-items: center;
+											    padding: 4%;
+											    outline: none;
+											    border: none;
+											    resize: none;
+											    /* text-align: center; */
+											    overflow: hidden;
+											    max-width: 100%;
+											    max-height: 100%;
+											    border-radius: 2%;
+											    font-size: 11vh;
+											    font-size: 64vh;
+											    font-size: 16vh;
+											    font-family: system-ui;
+											    font-family: 'Major Mono Display', monospace;
+											    font-family: 'Overlock SC', cursive;
+											    font-family: 'Raleway Dots', cursive;
+											    font-family: 'Comfortaa', cursive;
+											    z-index: 10;
+											    font-weight: 900;
+											    text-align: center;
+										/*	    text-transform: capitalize;   */
+								}
+
+
+
+
+								.typeable:focus {
+
+												outline: none;
+
+
+								}
+
+								.typeable: hover {
+
+
+												border: dashed 1px #000000;
+
+								}
+
+
+								form {
+
+										display: none;
+										width: 40vw;
+										height: 80vh;
+										background-color: #E1E0E0;
+								}
+
+
+								.ink {
+
+										position: absolute;
+										margin-right: 90vw;
+										margin-top: 32px;
+								}
+
+
+								.btn {
+
+											position: absolute;
+											top: 32px;
+											left: 88vw;
+											cursor: pointer;
+											background-color: #E0E0E0;
+											z-index: 4;
+											display: none;
+								}
+
+
+								.close {
+
+											position: absolute;
+											top: 32px;
+											left: 88vw;
+											cursor: pointer;
+											background-color: #E0E0E0;
+											z-index: 4;
+											display: none;
+
+								}
+
+								section.back {
+
+
+												width: 75%;
+												height: 85vh;
+												left: 12.5%;
+												display: none;
+												position: absolute;
+												top: 14vh;
+												background-color: transparent;
+												border: solid 1px;
+												opacity: 0.75;
+
+												position: absolute;
+
+											    text-align: center;
+											    padding: 24px;
+											    color: #89898d;
+
+
+											    justify-content: space-around;
+											    align-items: center;
+
+											    font-weight: 900;
+								}
+
+
+								.popupForm {
+
+
+											width: 90%;
+											height: 100%;
+											
+											margin: auto;
+								}
+
+
+								.title, .things1, .things2 {
+
+
+															width: 100%;
+								}
+
+								.title {
+
+											font-size: 24px;
+											display: grid;
+											justify-content: center;
+											align-items: center;
+								}
+
+								.things1 {
+
+											font-size: 20px;
+								}
+
+
+								.things1 {
+
+
+										display: flex;
+										flex-direction: column;
+										justify-content: space-around;
+										align-items: center;
+										height: 100%;
+
+								}
+
+
+								.ff {
+
+										width: 100%;
+										height: 10%;
+										display: flex;
+										justify-content: center;
+										align-items: center;
+										font-size: 4vh;
+
+								}
+
+
+								.icon {
+
+											width: 15%;
+											height: 85%;
+											display: grid;
+											justify-content: center;
+											align-items: center;
+								}
+
+								select {
+
+											width: 80%;
+											height: 85%;
+											border: none;
+											outline: none;
+											cursor: pointer;
+											font-size: 4vh;
+								}
+
+
+								option {
+
+										text-align: center;
+								}
+
+
+								button {
+
+										cursor: pointer;
+								}
+								
+
+
+								.things2 {
+
+
+													display: grid;
+												    grid-template-columns: 1fr 1fr 1fr;
+												    grid-template-rows: 30% 30% 30%;
+												    grid-column-gap: 10%;
+												    grid-row-gap: 5%;
+												    justify-content: center;
+												    align-items: center;
+												    height: 100%;
+								}
+
+
+
+
+								.blk-parent {
+
+										    width: 100%;
+										    height: 80%;
+										    background-color: #000000;
+										    border: solid 1px #000000;
+										    cursor: pointer;
+
+
+								}
+
+								.wht-child {
+
+
+												width: 30%;
+												height: 30%;
+												background-color: #ffffff;
+								}
+
+
+								#blk1 {
+
+
+											display: flex;
+											justify-content: flex-start;
+											align-items: flex-start;
+								}
+
+
+								#blk2 {
+
+
+											display: flex;
+											justify-content: center;
+											align-items: flex-start;
+								}
+
+
+								#blk3 {
+
+											display: flex;
+											justify-content: flex-end;
+											align-items: flex-start;
+
+								}
+
+
+								#blk4 {
+
+											display: flex;
+											justify-content: flex-start;
+											align-items: center;
+
+								}
+
+
+								#blk5 {
+
+											display: flex;
+											justify-content: center;
+											align-items: center;
+
+								}
+
+
+
+								#blk6 {
+
+											display: flex;
+											justify-content: flex-end;
+											align-items: center;
+
+								}
+
+
+								#blk7 {
+
+
+											display: flex;
+											justify-content: flex-start;
+											align-items: flex-end;
+
+								}
+
+
+								#blk8 {
+
+											display: flex;
+											justify-content: center;
+											align-items: flex-end;
+
+								}
+
+
+								#blk9 {
+
+											display: flex;
+											justify-content: flex-end;
+											align-items: flex-end;
+
+								}
+
+
+								.findPhoto {
+
+
+										width: 95%;
+										height: 6vh;
+										margin-top: 1vh;
+										margin-left:2.5%;
+
+										display: flex;
+										justify-content: space-between;
+										align-items: center;
+										font-family: 'Amatic SC', cursive;
+
+										position: fixed;
+
+										z-index: 12;
+
+
+								}
+
+
+								#findPhoto, #getAPhoto {
+								    height: 100%;
+								    width: 60%;
+								    border: solid;
+								    border-radius: 100px;
+								    border-bottom: solid #ffffff40;
+								    text-align: center;
+								    color: #ffffff40;
+								    background-color: transparent;
+								    font-size: 24px;
+								    font-weight: 100;
+								    font-family: system-ui;
+								    outline: none;
+								    display: grid;
+								    justify-content: center;
+								    align-items: center;
+								    text-transform: uppercase;
+								    letter-spacing: 16px;
+								}
+
+
+								#findPhoto: focus {
+
+
+												outline: none;
+								}
+
+
+
+
+
+
+								.main2 {
+
+
+										width: 100%;
+										height: 100vh;
+										background-color: #4c3737;
+
+										display: none;
+
+
+								}
+
+
+
+								.main3 {
+
+
+										width: 100%;
+										height: 100vh;
+										background-color: #4c3737;
+
+										display: none;
+
+
+								}
+
+								.audio {
+
+										width: 100%;
+										height: 5vh;
+										background-color: #0000001f;
+										color: #00ff08;
+										margin-top: 94vh;
+										position: absolute;
+
+										display: flex;
+										justify-content: space-around;
+										align-items: center;
+										font-family: monospace;
+
+										z-index: 20;
+								}
+
+
+								#music {
+
+
+										color: #00ff08;
+								}
+
+								a {
+
+
+									color: #ffffff;
+								}
+
+
+								audio {
+
+
+										display: none;
+								}
+
+								.black-layer-over {
+
+
+																    position: fixed;
+																    background-image: url('./defaultBg.jpg');
+																    background-size: cover;
+																    width: 100%;
+																    height: 100vh;
+																    opacity: 0.35;
+
+								}
+
+
+
+
+/* buubles code */
+								.wrapper {
+								  height: 100%;
+								  width: 100%;
+								  position: absolute;
+								  z-index: 8;
+								}
+								.wrapper h1 {
+								  top: 50%;
+								  left: 50%;
+								  transform: translate(-50%, -50%);
+								  position: absolute;
+								  font-family: sans-serif;
+								  letter-spacing: 1px;
+								  word-spacing: 2px;
+								  color: #fff;
+								  font-size: 40px;
+								  font-weight: 888;
+								  text-transform: uppercase;
+								}
+								.wrapper div {
+								  height: 60px;
+								  width: 60px;
+						/*		  border: 2px solid rgba(255, 255, 255, 0.7);  */
+								  border-radius: 50px;
+								  position: absolute;
+								  top: 10%;
+								  left: 10%;
+								  animation: 4s linear infinite;
+								}
+								div .dot {
+								  height: 64px;
+								  width: 64px;
+								  border-radius: 50px;
+								  position: absolute;
+								  top: 20%;
+								  right: 20%;
+								  background: radial-gradient(#f6fbfb61 0%,#f4fdff14 46%,#f1f1f159 100%);
+								  opacity: 0.5;
+								}
+								.wrapper div:nth-child(1) {
+								  top: 20%;
+								  left: 20%;
+								  animation: animate 8s linear infinite;
+								}
+								.wrapper div:nth-child(2) {
+								  top: 60%;
+								  left: 80%;
+								  animation: animate 10s linear infinite;
+								}
+								.wrapper div:nth-child(3) {
+								  top: 40%;
+								  left: 40%;
+								  animation: animate 3s linear infinite;
+								}
+								.wrapper div:nth-child(4) {
+								  top: 66%;
+								  left: 30%;
+								  animation: animate 7s linear infinite;
+								}
+								.wrapper div:nth-child(5) {
+								  top: 90%;
+								  left: 10%;
+								  animation: animate 9s linear infinite;
+								}
+								.wrapper div:nth-child(6) {
+								  top: 30%;
+								  left: 60%;
+								  animation: animate 5s linear infinite;
+								}
+								.wrapper div:nth-child(7) {
+								  top: 70%;
+								  left: 20%;
+								  animation: animate 8s linear infinite;
+								}
+								.wrapper div:nth-child(8) {
+								  top: 75%;
+								  left: 60%;
+								  animation: animate 10s linear infinite;
+								}
+								.wrapper div:nth-child(9) {
+								  top: 50%;
+								  left: 50%;
+								  animation: animate 6s linear infinite;
+								}
+								.wrapper div:nth-child(10) {
+								  top: 45%;
+								  left: 20%;
+								  animation: animate 10s linear infinite;
+								}
+								.wrapper div:nth-child(11) {
+								  top: 10%;
+								  left: 90%;
+								  animation: animate 9s linear infinite;
+								}
+								.wrapper div:nth-child(12) {
+								  top: 20%;
+								  left: 70%;
+								  animation: animate 7s linear infinite;
+								}
+								.wrapper div:nth-child(13) {
+								  top: 20%;
+								  left: 20%;
+								  animation: animate 8s linear infinite;
+								}
+								.wrapper div:nth-child(14) {
+								  top: 60%;
+								  left: 5%;
+								  animation: animate 6s linear infinite;
+								}
+								.wrapper div:nth-child(15) {
+								  top: 90%;
+								  left: 80%;
+								  animation: animate 9s linear infinite;
+								}
+								@keyframes animate {
+								  0% {
+								    transform: scale(0) translateY(0) rotate(70deg);
+								  }
+								  100% {
+								    transform: scale(1.3) translateY(-100px) rotate(360deg);
+								  }
+								}
+
+		
+			#lang {
+
+
+					position: fixed;
+					width: 4%;
+					height: auto;
+					color: peachpuff;
+
+
+					top: 8px;
+					left: 8px;
+					z-index: 99;
+
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+
+
+			}
+
+
+			.lang {
+
+
+
+					cursor: pointer;
+					font-size: 16px;
+					font-weight: 400;
+					font-family: monospace;
+
+			}
+
+
+			#en {
+
+
+					text-decoration: underline;
+			}
+
+
+			.sticks {
+
+
+
+												display: flex;
+												flex-direction: row;
+												justify-content: space-between;
+												align-items: center;
+												width: 40%;
+
+
+			}
+
+
+			#stick {
+			    height: 2vh;
+			    border-radius: 100px;
+			    width: 8%;
+			    cursor: pointer;
+			}
+
+
+			#text {
+
+
+								    display: block;
+								    position: fixed;
+								    top: 72vh;
+								    left: 1vw;
+								    width: auto;
+								    max-width: 30vw;
+								    height: auto;
+								    color: #16161673;
+								    font-family: monospace;
+								    z-index: 10;
+								    overflow: clip;
+			}
+
+
+					#text:hover {
+
+
+									color: #ffffff61;
+									cursor: cell;
+					}
+
+
+
+	</style>
+
+
+	<script src='fontAwesome.js'></script>
+
+
+
+		<script type="text/javascript">
+
+				let separator = ",";
+
+
+				function fontFamily(val){
+
+
+							typeable.style.fontFamily=val;
+
+				}
+
+
+				function fontSize(val){
+
+
+								typeable.style.fontSize=val;
+
+
+				}
+
+
+				function fontColor(val){
+
+
+								typeable.style.color=val;
+
+				}
+
+				function fontWeight(val) {
+
+
+								typeable.style.fontWeight=val;
+				}
+
+
+				function layout(jc,ai){
+
+
+								
+								photo.style.justifyContent=jc;
+								photo.style.alignItems=ai;
+
+								mainWindow();
+
+
+
+				}
+
+
+
+				function getAPhoto(e,refresh) {
+
+
+					 var key=e.keyCode || e.which;
+								
+
+					  if (key==13 || refresh==1){
+
+					  		photo.style.backgroundImage='none';
+
+					  		body.style.backgroundImage='none';
+								separator= separator + ',';
+								if(separator.length>20) {
+
+												separator = '';
+
+								}
+								let search = document.getElementById('findPhoto').value;
+								let unsplashUrl = "https://source.unsplash.com/random/?"+search+separator;
+
+								let url = "url('"+unsplashUrl+"')";
+								photo.style.backgroundImage=url;
+
+								document.getElementById('blo').style.backgroundImage='none';
+
+								timer= 24000;
+							//	reloader = setInterval(reload, timer);
+
+
+
+					  }
+
+
+
+
+
+
+				}
+
+
+				function playAudio(e) {
+
+								console.log('playAudio');
+
+
+								let key = e.keyCode || e.which;					
+
+
+								if (key==32){
+
+								  				document.getElementById('audio').src="../sounds/"+spaceKey;
+
+								  				writing = typeable.value + ' ';
+  												typeable.value=writing;
+
+								}
+
+
+								else if (key==13){
+
+								  				document.getElementById('audio').src="../sounds/"+enterKey;
+								  		/*		document.getElementById('audio').src="../sounds/bubble1.mp3"; */
+
+								}
+
+
+								else if(e.keyCode >= 48 && e.keyCode <= 57) {
+
+
+
+
+								  				document.getElementById('audio').src="../sounds/"+numberKey;
+
+
+								}
+
+
+								else {
+
+								//  				document.getElementById('audio').src="../sounds/key3.mp3";
+								  				document.getElementById('audio').src="../sounds/"+typingKey;
+
+
+
+
+								}
+
+								pauseAudio();
+
+
+								document.getElementById('audio').play();
+				}
+
+				function pauseAudio() {
+
+								console.log('pauseAudio');
+
+								document.getElementById('audio').pause();
+				}
+
+	
+			</script>
+
+
+</head>
+
+
+<body>
+
+
+		<div id="lang">
+		
+			<div class="lang" id="en" onclick="language(this.id);">EN</div>
+			<div class="lang" id="ot" onclick="language(this.id);">OT</div>
+
+	</div>
+
+
+
+
+
+<audio id="audio" controls style="display:none">
+  <source src="../sounds/scissors2.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+
+
+    <div class="wrapper">
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+    </div>
+
+	<i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+
+<div class="main1">
+
+					<div class="findPhoto">
+						
+							<input id="findPhoto" type="text" placeholder="SEARCH PHOTOS HERE" value="" onkeypress="getAPhoto(event);" />
+
+
+							<div class="settings">
+
+<!--
+							<i id="tool1" onclick="toolWindow('font');" class="fa tools fa-font" style="font-size:24px;"></i>
+
+
+							<i id="tool2" onclick="toolWindow('layout');" class="fa tools fa-th" style="font-size:24px;"></i>
+
+-->
+							<i id="tool3" onclick="getAPhoto('',1);" class="fas tools fa-redo" style="font-size:24px;"></i>
+
+
+
+							</div>
+
+
+							<div class="sticks">
+								
+
+															<div onclick="textColor(this.style.backgroundColor);" style="background-color: #ff1a4082;" id="stick"></div>
+															<div onclick="textColor(this.style.backgroundColor);" style="background-color: #ff1ae182;" id="stick"></div>
+															<div onclick="textColor(this.style.backgroundColor);" style="background-color: #391aff82;" id="stick"></div>
+															<div onclick="textColor(this.style.backgroundColor);" style="background-color: #1af9ff82;" id="stick"></div>
+															<div onclick="textColor(this.style.backgroundColor);" style="background-color: #1aff7682;" id="stick"></div>
+															<div onclick="textColor(this.style.backgroundColor);" style="background-color: #e6ff1a82;" id="stick"></div>
+															<div onclick="textColor(this.style.backgroundColor);" style="background-color: #ff441a82;" id="stick"></div>
+															<div onclick="textColor(this.style.backgroundColor);" style="background-color: #ff1a1a82;" id="stick"></div>
+															<div onclick="textColor(this.style.backgroundColor);" style="background-color: #ffffff;" id="stick"></div>
+															<div onclick="textColor(this.style.backgroundColor);" style="background-color: #000000;" id="stick"></div>
+							</div>
+
+					</div>
+
+		<section id="front" class="front">
+
+
+				<div id="photo" class="typeOverPhoto">
+					
+
+					<textarea onkeyup="playAudio(event), gojuon(event);" onkeydown="playAudio(event);" id="typeable" class="typeable"></textarea>
+
+
+				</div>
+
+
+
+				
+
+		</section>
+
+</div>
+
+
+<div class="main2">
+	
+
+							<div class="popupForm" id="font">
+								
+
+											<div class="things1">
+												
+												<span class="ff">
+													
+														<div class="icon">
+
+															<i class='fas fa-highlighter' style='font-size:32px'></i>
+
+														</div>
+
+														<select onchange="fontFamily(this.value);">
+
+															<option value="serif">Serif</option>
+															<option value="sans-serif">Sans-Serif</option>
+															<option value="monospace">Monospace</option>
+															<option value="cursive">Cursive</option>
+															<option value="Special Elite">Special Elite</option>
+															<option value="Roboto">Roboto</option>
+															<option value="Roboto Mono">Roboto Mono</option>
+															<option value="Inconsolata">Inconsolata</option>
+															<option value="Space Grotesk">Space Grotesk</option>
+
+														</select>
+
+												</span>
+												<span class="ff">
+													
+														<div class="icon">
+
+															<i class='fas fa-highlighter' style='font-size:32px'></i>
+
+														</div>
+
+														<select onchange="fontSize(this.value);">
+
+															<option value="16px">16px</option>
+															<option value="24px">24px</option>
+															<option value="32px">32px</option>
+															<option value="48px">48px</option>
+															<option value="64px">64px</option>
+															<option value="144px">144px</option>
+															<option value="256px">256px</option>
+
+														</select>
+
+												</span>
+												<span class="ff">
+													
+														<div class="icon">
+
+															<i class='fas fa-highlighter' style='font-size:32px'></i>
+
+														</div>
+
+														<select onchange="fontColor(this.value);">
+
+															<option style="color: black;" value="black">Black</option>
+															<option style="background-color: black; color: white" value="white">White</option>
+															<option style="color: blue" value="blue">Blue</option>
+															<option style="color: red;" value="red">Red</option>
+															<option style="color: green;" value="green">Green</option>
+															<option style="color: yellow;" value="yellow">Yellow</option>
+															<option style="color: pink;" value="pink">Pink</option>
+															<option style="color: purple;"value="purple">Purple</option>
+
+														</select>
+
+												</span>
+												<span class="ff">
+													
+														<div class="icon">
+
+															<i class='fas fa-highlighter' style='font-size:32px'></i>
+
+														</div>
+
+														<select onchange="fontWeight(this.value);">
+
+															<option value="100">100</option>
+															<option value="400">400</option>
+															<option value="700">700</option>
+															<option value="900">900</option>
+
+														</select>												
+
+												</span>
+
+												<button class="ff" onclick="mainWindow();">SAVE AND CLOSE</button>
+
+
+											</div>
+
+							</div>
+
+
+</div>
+
+
+<div class="main3"> 
+
+
+			<div class="popupForm">
+				
+
+								<div class="things2">
+																					
+
+									<div onclick="layout('flex-start','flex-start');" class="blk-parent" id="blk1">
+										
+											<div class="wht-child"></div>
+
+									</div>
+
+									<div onclick="layout('center','flex-start');" class="blk-parent" id="blk2">
+										
+											<div class="wht-child"></div>
+
+									</div>
+
+
+									<div onclick="layout('flex-end','flex-start');" class="blk-parent" id="blk3">
+										
+											<div class="wht-child"></div>
+
+									</div>
+
+
+									<div onclick="layout('flex-start','center');" class="blk-parent" id="blk4">
+										
+											<div class="wht-child"></div>
+
+									</div>
+
+
+									<div onclick="layout('center','center');" class="blk-parent" id="blk5">
+										
+											<div class="wht-child"></div>
+
+									</div>
+
+
+									<div onclick="layout('flex-end','center');" class="blk-parent" id="blk6">
+										
+											<div class="wht-child"></div>
+
+									</div>
+
+
+									<div onclick="layout('flex-start','flex-end');" class="blk-parent" id="blk7">
+										
+											<div class="wht-child"></div>
+
+									</div>
+
+
+									<div onclick="layout('center','flex-end');" class="blk-parent" id="blk8">
+										
+											<div class="wht-child"></div>
+
+									</div>
+
+
+									<div onclick="layout('flex-end','flex-end');" class="blk-parent" id="blk9">
+										
+											<div class="wht-child"></div>
+
+									</div>
+
+
+								</div>
+
+
+			</div>
+
+
+
+</div>
+
+
+<div class="audio">
+	
+			<i id="music" class='fas fa-music' style='font-size:16px; color:#00ff08'></i>
+
+			<a onclick="sound('bubble2','key2','key1','bubble0', 'defaultBg.jpg');" href="#">DEFAULT</a>
+			<a onclick="clearAll(), sound('key2','key2','key2','key2', '');" href="#">NOTHING</a>
+			<a id="sewingFrame" onclick="sound('sewing0','sewing1','key1','sewing4','sewingBg.jpg'), keyword(document.getElementById(this.id).innerHTML);" href="#">SEWING</a>
+			<a id="printingFrame" onclick="sound('print0','print1','key1','print4','printBg.jpg'), keyword(document.getElementById(this.id).innerHTML);" href="#">PRINTING</a>
+			<a id="laundryFrame" onclick="sound('laundry-----','laundry----','key1','laundry---','laundryBg.jpg'), keyword(document.getElementById(this.id).innerHTML);" href="#">LAUNDRY</a>
+			<a id="typewriterFrame" onclick="sound('type0','type1','key1','type2','typewriterBg.jpg'), keyword(document.getElementById(this.id).innerHTML);" href="#">TYPEWRITER</a>	
+			<a id="bindingFrame" onclick="sound('bindingSK','bindingEK','key1','bindingTK','bindingBg.jpg'), keyword(document.getElementById(this.id).innerHTML);" href="#">BINDING</a>
+			<a id="salonFrame" onclick="sound('soap','cut1','cut4','scissors2','salonBg.jpg'), keyword(document.getElementById(this.id).innerHTML);" href="#">SALON</a>
+			<a id="apothecaryFrame" onclick="sound('apothecary-','apothecary--','key1','apothecary---','apothecaryBg.jpg'), keyword(document.getElementById(this.id).innerHTML);" href="#">APOTHECARY</a>	
+			<a id="codingFrame" onclick="sound('coding0','coding1','key1','coding2','codingBg.jpg'), keyword(document.getElementById(this.id).innerHTML);" href="#">CODING</a>	
+
+
+
+</div>
+
+
+
+
+
+<div id="blo" class="black-layer-over">
+	
+
+
+
+</div>
+
+
+<div onclick="navigator.clipboard.writeText(document.getElementById(this.id).innerHTML);" id="text"></div>
+
+
+<!--
+			<section onmouseleave="this.style.opacity='0.1'; document.getElementById('front').style.opacity='0.9'" onmouseover="this.style.opacity='0.55'; document.getElementById('front').style.opacity='0.1'" id="back" class="back">
+				
+
+							<div class="popupForm" id="font">
+								
+											<div class="title">FONT</div>
+
+											<div class="things1">
+												
+												<span class="ff">
+													
+														<div class="icon">
+
+															<i class='fas fa-highlighter' style='font-size:32px'></i>
+
+														</div>
+
+														<select onchange="fontFamily(this.value);">
+
+															<option value="serif">Serif</option>
+															<option value="sans-serif">Sans-Serif</option>
+															<option value="monospace">Monospace</option>
+															<option value="cursive">Cursive</option>
+
+														</select>
+
+												</span>
+												<span class="ff">
+													
+														<div class="icon">
+
+															<i class='fas fa-highlighter' style='font-size:32px'></i>
+
+														</div>
+
+														<select onchange="fontSize(this.value);">
+
+															<option value="16px">16px</option>
+															<option value="24px">24px</option>
+															<option value="32px">32px</option>
+															<option value="48px">48px</option>
+															<option value="64px">64px</option>
+
+														</select>
+
+												</span>
+												<span class="ff">
+													
+														<div class="icon">
+
+															<i class='fas fa-highlighter' style='font-size:32px'></i>
+
+														</div>
+
+														<select onchange="fontColor(this.value);">
+
+															<option style="color: black;" value="black">Black</option>
+															<option style="background-color: black; color: white" value="white">White</option>
+															<option style="color: blue" value="blue">Blue</option>
+															<option style="color: red;" value="red">Red</option>
+															<option style="color: green;" value="green">Green</option>
+															<option style="color: yellow;" value="yellow">Yellow</option>
+															<option style="color: pink;" value="pink">Pink</option>
+															<option style="color: purple;"value="purple">Purple</option>
+
+														</select>
+
+												</span>
+												<span class="ff">
+													
+														<div class="icon">
+
+															<i class='fas fa-highlighter' style='font-size:32px'></i>
+
+														</div>
+
+														<select onchange="fontWeight(this.value);">
+
+															<option value="100">100</option>
+															<option value="400">400</option>
+															<option value="700">700</option>
+															<option value="900">900</option>
+
+														</select>												
+
+												</span>
+
+
+											</div>
+
+							</div>
+
+							<div class="popupForm" id="layout">
+								
+								<div class="title">LAYOUT</div>
+
+								<div class="things2">
+																					
+
+									<div onclick="layout('flex-start','flex-start');" class="blk-parent" id="blk1">
+										
+											<div class="wht-child"></div>
+
+									</div>
+
+									<div onclick="layout('center','flex-start');" class="blk-parent" id="blk2">
+										
+											<div class="wht-child"></div>
+
+									</div>
+
+
+									<div onclick="layout('flex-end','flex-start');" class="blk-parent" id="blk3">
+										
+											<div class="wht-child"></div>
+
+									</div>
+
+
+									<div onclick="layout('flex-start','center');" class="blk-parent" id="blk4">
+										
+											<div class="wht-child"></div>
+
+									</div>
+
+
+									<div onclick="layout('center','center');" class="blk-parent" id="blk5">
+										
+											<div class="wht-child"></div>
+
+									</div>
+
+
+									<div onclick="layout('flex-end','center');" class="blk-parent" id="blk6">
+										
+											<div class="wht-child"></div>
+
+									</div>
+
+
+									<div onclick="layout('flex-start','flex-end');" class="blk-parent" id="blk7">
+										
+											<div class="wht-child"></div>
+
+									</div>
+
+
+									<div onclick="layout('center','flex-end');" class="blk-parent" id="blk8">
+										
+											<div class="wht-child"></div>
+
+									</div>
+
+
+									<div onclick="layout('flex-end','flex-end');" class="blk-parent" id="blk9">
+										
+											<div class="wht-child"></div>
+
+									</div>
+
+
+								</div>
+
+
+							</div>
+
+
+
+			</section>
+
+
+-->
+
+
+				<script>
+
+
+				let play = 1;
+
+				let lang = 0;
+
+				let timer;
+
+				let reloader;
+
+
+				let spaceKey="bubble2.mp3";
+				let enterKey="key2.mp3";
+				let numberKey="key1.mp3";
+				let typingKey="bubble0.mp3";
+
+
+
+
+
+					let main1 = document.getElementsByClassName("main1");
+					let main2 = document.getElementsByClassName("main2");
+					let main3 = document.getElementsByClassName("main3");
+
+					let blo = document.getElementById('blo');
+
+
+				let photo = document.getElementById('photo');
+				let typeable = document.getElementById('typeable');
+				let body = document.getElementsByTagName("body")[0];
+
+
+				let back = document.getElementsByTagName("section")[1];
+
+
+				let tools = document.getElementsByClassName("tool");
+
+				let writing = '';
+
+
+				typeable.addEventListener('mouseover', function(event){
+
+
+								typeable.style.border="dashed 1px";
+								typeable.style.resize='auto';
+								typeable.placeholder='You got what you searched for?';
+								typeable.style.background='transparent';
+
+
+
+				});
+
+
+
+
+
+				typeable.addEventListener('mouseout', function(event){
+
+
+
+
+								typeable.style.border="none";
+								typeable.style.resize='none';
+								typeable.style.background='transparent';
+
+							//	photo.style.width='60vw';
+								typeable.placeholder='';
+
+				});
+
+
+				function reload(){
+
+
+								console.log(timer);
+								document.getElementById('tool3').click();
+
+				}
+				
+
+
+				function toolWindow(what){
+
+									
+
+
+
+								if(what=='font'){
+
+									main1[0].style.display='none';
+									main3[0].style.display='none';
+									main2[0].style.display='block';
+
+								}
+
+								if(what=='layout'){
+
+									play = Number(1) - Number(play);
+
+									if(play==0){
+
+										timer = 240000000;
+										console.log(play + '< pause >');
+								//		reloader = setInterval(reload, timer);
+
+
+									}
+
+									else{
+
+										timer = 24000;
+										console.log(play + '< play >');
+						//				reloader = setInterval(reload, timer);
+
+
+
+									}
+
+									/*
+									main1[0].style.display='none';
+									main2[0].style.display='none';
+									main3[0].style.display='block';
+									*/
+
+								}								
+
+
+				}
+
+
+				function mainWindow(){
+
+
+									main1[0].style.display='block';
+									main2[0].style.display='none';
+									main3[0].style.display='none';
+
+
+				}
+
+
+				function sound(sk, ek, nk, tk, jpg){
+
+						/*		clearInterval(reloader);
+									reloader = setInterval(reload, timer);
+
+						*/
+
+									blo.style.display='block';
+
+
+									if(sk!='key2' && sk!='coding0') {
+
+												document.getElementById('typeable').style.fontSize='64vh';
+
+									}
+
+
+									else {
+
+												document.getElementById('typeable').style.fontSize='64vh';
+
+
+									}
+
+
+									if(sk=="sewing0"){
+
+											document.getElementById('typeable').fontFamily="Overlock SC !important";
+									console.log(sk);
+
+									}
+
+									else {
+
+											document.getElementById('typeable').fontFamily="Major Mono Display !important";
+
+
+									}
+
+
+									document.getElementById('audio').src="../sounds/"+ek+".mp3";
+									document.getElementById('audio').play();
+
+
+
+									spaceKey=sk+".mp3";
+									enterKey=ek+".mp3";
+									numberKey=nk+".mp3";
+									typingKey=tk+".mp3";
+
+									document.getElementById('blo').style.backgroundImage="url("+jpg+")";
+
+
+				}
+
+
+				function clearAll() {
+
+
+								blo.style.display='none';
+								photo.style.backgroundImage='none';
+
+				}
+
+				function gojuon(e){
+
+
+					let key = e.keyCode || e.which;	
+
+
+					 		let keyValue = e.key;
+
+ 							if(keyValue.length<=1) {
+
+ 												document.getElementById('text').innerHTML+=keyValue;
+
+ 							}
+
+
+  					let gojuonList = ["会", "あ",	"い",	"う",	"え",	"お", "か", "き", "け", "こ", "さ", "し", "す", "せ", "そ", "た", "ち", "つ", "て", "と", "な",	"に", "ぬ",	"ね",	"の", "は",	"ひ",	"ふ",	"へ", "ほ", "ま",	"み",	"む",	"め",	"も", "や	", "ゆ", "𛀁",	"よ", "ら",	"り","る","れ","ろ", "会", "わ", "ゐ", "ゑ","ㄱ", "ㄲ", "ㅋ", "ㆁ", "ㄷ", "ㄸ", "ㅌ", "ㄴ", "ㅂ", "ㅃ", "ㅍ", "ㅁ", "ㅈ", "ㅉ", "ㅊ", "ㅅ", "ㅆ", "ㆆ", "ㅎ", "ㆅ", "ㅇ", "ㄹ", "ㅿ", "ㆍ", "ㅡ", "ㅣ", "ㅗ", "ㅏ", "ㅜ", "ㅓ", "ㅛ", "ㅑ", "ㅠ", "ㅕ", 	"を", "一",	"二",	"三", "百",	"四",	"五", "言", "会", "六", "七", "八",	"九",	"人",	"今",	"日", "週",	"月",	"年",	"中", "言", 	"山",	"川", "白",	"左", "目", 	"右",	"大",	"木",	"本",	"水"	, "火", "父",	"母",	"耳", "口",	"休",	"何",	"入", "言",	"上",	"前",	"下", "車"	, "道",	 "金", "長",	"間", "雨", "電", "食",	"飲", "駅", "高"	, "魚",	"千",	"午"	, "友", "古",	"名",	"国", "外",	"女",	"男", "子", "学", "生", "小", "書", "	毎",	 "先", "ㄱ", "ㄲ", "ㅋ", "ㆁ", "ㄷ", "ㄸ", "ㅌ", "ㄴ", "ㅂ", "ㅃ", "ㅍ", "ㅁ", "言", "ㅈ", "ㅉ", "ㅊ", "ㅅ", "ㅆ", "ㆆ", "ㅎ", "ㆅ", "ㅇ", "ㄹ", "ㅿ", "ㆍ", "ㅡ", "ㅣ", "ㅗ", "ㅏ", "ㅜ", "ㅓ", "ㅛ", "ㅑ", "ㅠ", "ㅕ","円","出", "分", "北", "半", "ㆁ", "ㄷ", "ㄸ", "ㅌ", "ㄴ", "ㅂ", "ㅃ", "ㅍ", "ㅁ", "言", "手", "空", "新", "後", "南", "土", "校", "多", "語", "話", "天", "店", "安", "少", "買", "西", "読", "東", "聞", "来", "足", "立", "見", "円","出", "分", "北", "半", "ㆁ", "ㄷ", "ㄸ", "ㅌ", "ㄴ", "ㅂ", "ㅃ", "ㅍ", "ㅁ", "言", "手", "空", "新", "後", "南", "土", "校", "多", "語", "話", "天", "店", "安", "少", "買", "西", "読", "東", "聞", "来", "足", "立", "見", "円","出", "分", "北", "半", "ㆁ", "ㄷ", "ㄸ", "ㅌ", "ㄴ", "ㅂ", "ㅃ", "ㅍ", "ㅁ", "言", "手", "空", "新", "後", "南", "土", "校", "多", "語", "話", "天", "店", "安", "少", "買", "西", "読", "東", "聞", "来", "足", "立", "見", "円","出", "分", "北", "半", "ㆁ", "ㄷ", "ㄸ", "ㅌ", "ㄴ", "ㅂ", "ㅃ", "ㅍ", "ㅁ", "言", "手", "空", "新", "後", "南", "土", "校", "多", "語", "話", "天", "時", "気", "店", "安", "社", "行", "少", "買", "西", "読", "東", "聞", "来", "足", "立", "見", "൦", "൧", "	൨",	"൩", "൪",	"൫",	"൬",  "൭", "	൮",	"൯", "൰", "൦", "൧", "	൨",	"൩", "൪",	"൫",	"൬",  "൭", "	൮",	"൯", "൰", "൱", "൲", "൳", "൴", "൵", "൱", "൲", "൳", "൴", "൵", "൦", "൧", "	൨",	"൩", "൪",	"൫",	"൬",  "൭", "	൮","൯", "൰", "൱", "൲", "൳", "൴", "൵" ];
+
+
+// "൦", "൧", "	൨",	"൩", "൪",	"൫",	"൬",  "൭", "	൮",	"൯", "൰", "൦", ""൧", "	൨",	"൩", "൪",	"൫",	"൬",  "൭", "	൮",	"൯", "൰", "൱", "൲", "൳", "൴", "൵", "൱", "൲", "൳", "൴", "൵", "൦", ""൧", "	൨",	"൩", "൪",	"൫",	"൬",  "൭", "	൮",	"൯", "൰", "൱", "൲", "൳", "൴", "൵",
+
+  					let gojuonChar = gojuonList[Math.floor(Math.random() * gojuonList.length)];
+
+  								if(key==32 && lang==1){
+								  				writing = typeable.value + ' ';
+  												typeable.value=writing;
+
+  								}
+
+  								else if (key==37 && lang==1 || key==38 && lang==1 || key==39 && lang==1 || key==40 && lang==1 ||key==13 && lang==1){
+
+
+  													console.log('do nothing');
+  													e.preventDefault();
+  								}
+
+
+  								else if(key==8  && lang==1) {
+
+												writing = typeable.value;
+  												e.preventDefault();
+  								}
+
+  								else if (key==27 && lang==1) {
+
+											typeable.value='';
+											e.preventDefault();
+											typeable.value='';
+											writing='';
+
+  								}
+
+
+  								else if (lang==1) {
+
+
+					  					writing = writing + gojuonChar;
+					  					typeable.value=writing;
+
+
+					  					document.getElementById('long').focus();
+						// select all the content in the element
+										document.execCommand('selectAll', false, null);
+						// collapse selection to the end
+										document.getSelection().collapseToEnd();
+
+
+							}
+
+							else {
+
+
+							}
+
+		
+			}
+
+
+
+		function language(id) {
+
+
+
+						document.getElementById('en').style.textDecoration="none";
+						document.getElementById('ot').style.textDecoration="none";
+
+						document.getElementById(id).style.textDecoration="underline";
+
+						if(id=="en") {
+
+
+									lang = 0;
+									typeable.style.fontWeight='600';
+						}
+
+
+						else {
+
+									lang = 1;
+									typeable.style.fontWeight='100';
+						}
+
+						console.log(lang);
+
+		}
+
+
+
+		function keyword(val) {
+
+
+								document.getElementById('findPhoto').value=val;
+								photo.style.backgroundImage='none';
+		}
+
+
+
+		function textColor(color) {
+
+
+							document.getElementById('typeable').style.color=color;
+
+		}
+
+
+
+				</script>
+
+
+
+
+
+</body>
+</html>
+
+<!--  /* the script updates  */  
+
+
+			. remove background black color layer upon chosing "NOTHING" as the backgroud. remove any audio too.
+			. another idea is as soon as I type the key up event calls a function that displays a random Japanese word which is stored in my code.
+			.find the japaense or korean characters from "Calmly Writer" type space.
+			. add mutliple fontolor options for user to selet.
+			. remove time Interval auto image show
+			.add keyword as the bottom name clicked--for example Sewing--Sewing and then user have to click relod to show new image on Sewing instead of the default image.
+
+			let colors = ["#ff1a4082", "#ff1ae182",  "#391aff82",  "#1af9ff82",  "#1aff7682",  "#e6ff1a82",  "#ff441a82" "#ff1a1a82"];
+
+
+
+-->
